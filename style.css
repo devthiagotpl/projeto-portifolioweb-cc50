@@ -1,0 +1,154 @@
+/* Reset básico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Newe', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  /* espaçamento do conteudo em cima e no lado esquerdo da tela. */
+  padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilização das Seções */
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* Sobreado da section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Arredondamento da borda */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos dos Projetos */
+.projetos {
+  background-color: #e9ecef;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilo do formulário de Contato */
+#formContato input, #formContato textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#formContato button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formContato button:hover {
+  background-color: #218838;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+}
+
+#contato {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+#contato h2 {
+  color: #007bff;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+/* Estilos do Formulário */
+#formContato {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1em;
+}
+
+#formContato input, #formContato textarea {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#formContato textarea {
+  grid-column: 1 / -1;
+}
+
+#formContato button {
+  grid-column: 1 / -1;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s transform 0.3s;
+}
+
+  #formContato button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+
+/* Responsividade para Formulários */
+@media screen and (max-width: 768px) {
+  #formContato {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
